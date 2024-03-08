@@ -10,11 +10,10 @@ function onLogInSubmit(event) {
     const userName = loginInput.value;            // 입력값을 변수에 저장한다.
     loginForm.classList.add(HIDDEN_CLASSNAME);    // Form 양식을 안보이도록 한다.
     localStorage.setItem(USERNAME_KEY, userName); // 로컬스토리지에 입력받은 값을 저장한다.
-    paintGreetings(userName);                     // 입력받은 값을 통해 Hello ~~를 화면에 표시한다.
+    paintGreetings(userName);                     // 입력받은 값을 통해 Hello ~~를 출력한다.
 }
  
 function paintGreetings(userName) {
-    
     greeting.innerText = `Hello ${userName}!`; // 해당 값 출력
     greeting.classList.remove(HIDDEN_CLASSNAME); // .hidden제거
 }
