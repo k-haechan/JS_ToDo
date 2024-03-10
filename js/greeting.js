@@ -1,6 +1,6 @@
 const nameForm  = document.querySelector("#name-form");
 const nameInput = nameForm.querySelector("input");
-const greeting   = document.querySelector("#greeting")
+const greeting  = document.querySelector("#greeting")
 
 const USERNAME_KEY = "userName";
 const HIDDEN_CLASSNAME = "hidden";
